@@ -29,7 +29,7 @@ h6 {
 	background-color: rgb(240, 225, 205);
 }
 
-.wrap {
+.wrapper {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
