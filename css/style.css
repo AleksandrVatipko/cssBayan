@@ -1,0 +1,68 @@
+.wrapper {
+	max-width: 400px;
+	margin: 0 auto;
+}
+.main {
+	padding: 0 20px;
+	max-height: 100vh;
+}
+.main:hover .mem-title::after {
+	display: inline;
+}
+.main:hover .mem-input:checked ~ .mem-title::after {
+	display: inline;
+}
+
+.mem-item {
+	border-top: 1px solid #000;
+}
+
+.mem-title {
+	display: block;
+	padding: 10px 15px;
+	cursor: pointer;
+	position: relative;
+}
+.mem-input {
+	width: 0;
+	height: 0;
+	-webkit-appearance: none;
+	appearance: none;
+	position: absolute;
+}
+.mem-input:checked ~ .mem-pic {
+	display: block;
+}
+.mem-pic {
+	display: none;
+}
+.mem-pic img {
+	display: block;
+	margin: 10px auto;
+	padding: 5px;
+}
+.mem-pic__item {
+	max-width: 40%;
+}
+.mem-title::after {
+	display: none;
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	border-style: solid;
+	border-width: 4px 10px 4px 0;
+	border-color: transparent #007bff transparent transparent;
+	transform: translateY(-50%);
+}
+
+.mem-input:checked ~ .mem-title::after {
+	content: '';
+	display: none;
+	border-style: solid;
+	border-width: 8px 5px 0 5px;
+	border-color: #007bff transparent transparent transparent;
+}
+.mem-item:hover .mem-pic {
+	display: block;
+}
