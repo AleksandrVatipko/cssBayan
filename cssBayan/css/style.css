@@ -94,10 +94,11 @@ h6 {
 
 .mem-container:hover .mem-item {
 	transition-duration: 0.5s;
-	background-color: antiquewhite;
 }
 .mem-title {
 	font-size: 30px;
+	font-weight: 700;
+	color: blue;
 }
 @media (max-width: 1340px) {
 	.mem-title {
@@ -119,15 +120,10 @@ h6 {
 		display: none;
 	}
 }
-/* .mem-container:hover .mem-icon {
-	transition-duration: 0.5s;
-	opacity: 1;
-} */
 .main-wrap:hover .mem-icon {
 	transition-duration: 0.5s;
 	opacity: 1;
 }
-
 .radio:checked ~ .mem-icon {
 	transform: rotate(45deg);
 }
@@ -135,7 +131,9 @@ h6 {
 .mem-item:hover .mem-icon {
 	transform: rotate(45deg);
 }
-
+.mem-item:hover .mem-title {
+	color: #000;
+}
 .icon {
 	height: 25px;
 	width: 25px;
