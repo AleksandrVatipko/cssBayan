@@ -119,10 +119,23 @@ h6 {
 		display: none;
 	}
 }
-.mem-container:hover .mem-icon {
+/* .mem-container:hover .mem-icon {
+	transition-duration: 0.5s;
+	opacity: 1;
+} */
+.main-wrap:hover .mem-icon {
 	transition-duration: 0.5s;
 	opacity: 1;
 }
+
+.radio:checked ~ .mem-icon {
+	transform: rotate(45deg);
+}
+
+.mem-item:hover .mem-icon {
+	transform: rotate(45deg);
+}
+
 .icon {
 	height: 25px;
 	width: 25px;
